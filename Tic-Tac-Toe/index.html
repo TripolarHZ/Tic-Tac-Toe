@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe!</title>
+    <link rel="stylesheet" type="text/css" href="Tic-Tac-Toe.css"/>
+</head>
+<body>
+    <main>
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+        </div>
+        <div id="game">
+            <h1 id="title">Tic Tac Toe</h1>
+            <div id = "playerBlock">
+                <div id="player1Block">
+                    <p id="gamePlayer1"></p>
+                    <p id="X">X</p>
+                </div>
+                <div id="player2Block">
+                    <p id="gamePlayer2"></p>
+                    <p id="X">O</p>
+                </div>
+            </div>
+            <div class="board" id="board">
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+            </div>
+            <h2 id="status"></h2>
+            <button id="restartButton">Restart</button>
+            <p id="win"></p>
+            <p id="tie">Tie!</p>
+        </div>
+        <div id="onePlayer">
+            <div id="player1">
+                <p>Player 1: </p>
+                <div class="inputBox">
+                    <input type="text" id="player11name" placeholder="Enter Player1 Name">
+                </div>
+            </div>
+            <button id="startButton1">Start</button>
+        </div>
+        <div id = "twoPlayers">
+            <div class="player1">
+                <p>Player 1: </p>
+                <div class="inputBox">
+                    <input type="text"id="player12name" placeholder="Enter Player1 Name">
+                </div>
+            </div>
+            <div class="player2">
+                <p>Player 2: </p>
+                <div class="inputBox">
+                    <input type="text" id="player2name" placeholder="Enter Player2 Name">
+                <div class="inputBox">
+            </div>
+            <button id="startButton2">Start</button>
+        </div>
+        <div id="mode">
+            <h1 id="title">Tic Tac Toe</h1>
+            <button id="single" class="modeButton">One Player</button>
+            <button id="double" class="modeButton">Two Players</button>
+        </div>
+    </main>
+    <audio id="click1">
+        <source src="click.mp3.mov">
+    </audio>
+    <audio id="click2">
+        <source src="click2.mp3.mov">
+    </audio>
+    <audio id="cheering">
+        <source src="cheering.mp3">
+    </audio>
+    <audio id="tieing">
+        <source src="tie.mp3">
+    </audio>
+    <audio id="restarting">
+        <source src="restart.mp3">
+    </audio>
+    <audio id="starting">
+        <source src="start.mp3.mov">
+    </audio>
+    <audio id="choosing">
+        <source src="mode.mp3.mov">
+    </audio>
+    <script src="Tic-Tac-Toe.js"></script>
+</body>
+</html>
